@@ -16,4 +16,5 @@
 # how to make
 
  chmod +x EVIL-SKN
- ./HT-WB.sh or bash EVIL-SKN
+ 
+ ./EVIL-SKN or bash EVIL-SKN
